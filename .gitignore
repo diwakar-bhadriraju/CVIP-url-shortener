@@ -32,3 +32,6 @@ build/
 
 # Ignore local configuration files
 config.local.js
+
+# Ignore package-lock.json
+package-lock.json
