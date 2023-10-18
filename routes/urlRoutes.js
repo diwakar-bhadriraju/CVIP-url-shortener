@@ -11,7 +11,4 @@ router.post('/shorten', async (req, res) => {
 router.get('/:shortCode', async (req, res) => {
   // Handle URL redirection logic here
 });
-router.get('/',async(req,res)=>{
-  res.send('Hello World!');
-})
 module.exports = router;
