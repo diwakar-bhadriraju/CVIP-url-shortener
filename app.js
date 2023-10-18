@@ -58,7 +58,9 @@ app.get('/:shortCode', async (req, res) => {
       res.status(500).json({ error: 'Error looking up the URL' });
     });
 });
-
+app.get('/', (req, res) => {
+  res.send('Welcome to the URL Shortener');
+});
 const PORT = process.env.PORT || 80;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
